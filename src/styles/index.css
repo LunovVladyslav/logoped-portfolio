@@ -1,0 +1,30 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* Custom styles for react-day-picker */
+.rdp {
+  --rdp-accent-color: rgb(147 51 234);
+  --rdp-accent-color-dark: rgb(126 34 206);
+  --rdp-background-color: rgb(243 232 255);
+  --rdp-outline: 2px solid var(--rdp-accent-color);
+}
+
+.rdp-day_button:hover:not([disabled]):not(.rdp-day_selected) {
+  background-color: rgb(250 245 255);
+}
+
+.rdp-day_button:focus-visible {
+  outline: var(--rdp-outline);
+  outline-offset: 2px;
+}
+
+.rdp-selected .rdp-day_button {
+  background: linear-gradient(135deg, rgb(147 51 234), rgb(219 39 119));
+  color: white;
+}
+
+.rdp-today {
+  font-weight: bold;
+  color: rgb(147 51 234);
+}
